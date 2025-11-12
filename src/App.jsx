@@ -22,13 +22,22 @@ function App() {
 
         {/* Main Content */}
      <main className="flex-1 overflow-y-auto bg-gray-50 pt-16">
+    
         <div className="p-6">
+          
         {currentPage === "dashboard" && <Dashboard />}
          {currentPage !== "dashboard" && (
       <div className="text-gray-600 text-lg font-semibold">
         {currentPage.charAt(0).toUpperCase() + currentPage.slice(1)} Page
       </div>
     )}
+    {/* Image */}
+    <img
+      src="/image/react.jpg" // replace with your image path
+      alt="Dashboard Banner"
+      className="w-full max-w-3xl rounded-lg shadow-lg object-cover"
+    />
+
   </div>
 </main>
 

@@ -2,6 +2,7 @@ import React from "react";
 import {
   Bell,
   ChevronDown,
+  Filter,
   Menu,
   Plus,
   Search,
@@ -35,6 +36,7 @@ const Header = ({ toggleSidebar }) => {
             className="w-full dark:bg-white pl-10 pr-12 py-2 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <Search className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" />
+        <Search className="absolute right-3 top-2.5 w-5 h-5 text-red-500 cursor-pointer hover:text-red-600" />
         </div>
       </div>
 
@@ -43,7 +45,7 @@ const Header = ({ toggleSidebar }) => {
 
         {/* Plus Button */}
         {/* Plus Button */}
-        <button className="p-2 rounded-md hover:scale-105 transition-transform bg-gradient-to-r from-blue-500 to-red-500 text-white">
+        <button className="p-2 rounded-md hover:scale-105 transition-transform bg-gradient-to-r cursor-pointer from-blue-500 to-red-500 text-white">
           <Plus className="w-5 h-5" />
         </button>
 
@@ -52,18 +54,18 @@ const Header = ({ toggleSidebar }) => {
        
 
         {/* Notification Icon */}
-        <button className="relative p-2 rounded-full hover:bg-slate-600 transition-colors">
+        <button className="relative p-2 rounded-full hover:bg-blue-600 transition-colors cursor-pointer">
           <Bell className="w-6 h-6" />
           <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-500 ring-1 ring-white"></span>
         </button>
 
         {/* Settings */}
-        <button className="p-2 rounded-md hover:bg-slate-600 transition-colors">
+        <button className="p-2 rounded-md hover:bg-blue-600 transition-colors cursor-pointer">
           <Settings className="w-5 h-5" />
         </button>
 
         {/* Dark/Light Mode Toggle */}
-        <button className="p-2 rounded-md hover:bg-slate-600 transition-colors">
+        <button className="p-2 rounded-md hover:bg-blue-600 transition-colors cursor-pointer">
           <Sun className="w-5 h-5"/>
         </button>
 

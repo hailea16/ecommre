@@ -1,4 +1,5 @@
 import React from "react";
+import StatusGrid from "./StatusGrid";
 
 const Dashboard = () => {
   return (
@@ -8,6 +9,7 @@ const Dashboard = () => {
         Welcome to your admin dashboard! Here you can view analytics, manage
         users, and monitor activity.
       </p>
+      <StatusGrid/>
     </div>
   );
 };

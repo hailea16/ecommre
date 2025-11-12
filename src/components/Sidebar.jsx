@@ -96,12 +96,12 @@ const Sidebar = ({ currentPage, setCurrentPage, isOpen }) => {
     <div
       className={`${
         isOpen ? "w-72" : "w-20"
-      } transition-all duration-300 ease-in-out bg-blue-400 dark:bg-slate-200 flex flex-col relative backdrop-blur-xl border-r border-slate-200/50 z-10 top-16`}
+      } transition-all duration-300 ease-in-out bg-blue-400 dark:bg-slate-500 flex flex-col relative backdrop-blur-xl border-r border-slate-200/50 z-10 top-16`}
     >
       {/* Logo Area */}
       <div className="p-6 border-b border-slate-200/50 dark:border-slate-200/50 flex items-center justify-center">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+          <div className="w-10 h-10 bg-linear-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
             <Zap className="w-6 h-6 text-white" />
           </div>
           {isOpen && (
@@ -128,8 +128,8 @@ const Sidebar = ({ currentPage, setCurrentPage, isOpen }) => {
               }}
               className={`flex items-center justify-between w-full p-3 rounded-xl transition-all duration-200 cursor-pointer ${
                 currentPage === item.id
-                  ? "bg-blue-600 text-white"
-                  : "hover:bg-blue-500/20 text-slate-800 dark:text-slate-700"
+                  ? "bg-blue-500 text-white"
+                  : "hover:bg-blue-500 text-slate-800 dark:text-slate-700"
               }`}
             >
               <div className="flex items-center space-x-3">
@@ -143,7 +143,7 @@ const Sidebar = ({ currentPage, setCurrentPage, isOpen }) => {
                 </span>
               )}
               {item.badge && isOpen && (
-                <span className="text-xs bg-green-500 text-white rounded-full px-2 py-0.5">
+                <span className="text-xs  bg-green-500 text-white rounded-full px-2 py-0.5">
                   {item.badge}
                 </span>
               )}
