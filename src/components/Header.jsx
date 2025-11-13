@@ -4,6 +4,7 @@ import {
   ChevronDown,
   Filter,
   Menu,
+  Moon,
   Plus,
   Search,
   Settings,
@@ -45,7 +46,7 @@ const Header = ({ toggleSidebar }) => {
 
         {/* Plus Button */}
         {/* Plus Button */}
-        <button className="p-2 rounded-md hover:scale-105 transition-transform bg-gradient-to-r cursor-pointer from-blue-500 to-red-500 text-white">
+        <button className="p-2 rounded-md hover:scale-105 transition-transform bg-gradient-to-r cursor-pointer from-pink-500 to-green-500 text-white">
           <Plus className="w-5 h-5" />
         </button>
 
@@ -66,7 +67,7 @@ const Header = ({ toggleSidebar }) => {
 
         {/* Dark/Light Mode Toggle */}
         <button className="p-2 rounded-md hover:bg-blue-600 transition-colors cursor-pointer">
-          <Sun className="w-5 h-5"/>
+          <Moon className="w-5 h-5"/>
         </button>
 
         {/* User Info with Dropdown */}

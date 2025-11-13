@@ -32,12 +32,7 @@ function App() {
       </div>
     )}
     {/* Image */}
-    <img
-      src="/image/react.jpg" // replace with your image path
-      alt="Dashboard Banner"
-      className="w-full max-w-3xl rounded-lg shadow-lg object-cover"
-    />
-
+    
   </div>
 </main>
 

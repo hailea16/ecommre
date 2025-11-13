@@ -118,7 +118,7 @@ const Sidebar = ({ currentPage, setCurrentPage, isOpen }) => {
       </div>
 
       {/* Menu */}
-      <nav className="flex-1 p-4 space-y-2 overflow-auto">
+      <nav className="flex-1 p-4 space-y-2  overflow-auto">
         {menuItems.map((item) => (
           <div key={item.id}>
             <button
@@ -175,8 +175,8 @@ const Sidebar = ({ currentPage, setCurrentPage, isOpen }) => {
       </nav>
 
       {/* User Info */}
-      <div className="p-4 border-t border-slate-200/50 dark:border-slate-700/50 flex items-center justify-center">
-        <div className="flex items-center space-x-3 rounded-xl bg-slate-100 dark:bg-slate-600 p-2">
+      <div className="p-10 border-t border-slate-200/50 dark:border-slate-700/50 flex items-center justify-center">
+        <div className="flex items-center space-y-1 rounded-xl bg-slate-100 dark:bg-slate-600 p-2">
           <img
             src="/image/react.jpg"
             alt="user"
