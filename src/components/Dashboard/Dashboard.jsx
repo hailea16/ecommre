@@ -1,7 +1,7 @@
 import React from "react";
 import StatusGrid from "./StatusGrid";
 import ChartSection from "./ChartSection";
-
+import TableSection from "./TableSection";
 const Dashboard = () => {
   return (
     <div className="flex flex-col  space-y-4">
