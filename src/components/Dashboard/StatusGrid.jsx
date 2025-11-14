@@ -44,17 +44,17 @@ const StatusGrid = () => {
         return (
           <div
             key={index}
-            className="bg-white/80 dark:bg-slate-900/50 backdrop-blur-xl rounded-xl p-6 
+            className="bg-black dark:bg-slate-200 backdrop-blur-xl rounded-xl p-6 
                        border border-slate-200/50 dark:border-slate-700/50 
                        hover:shadow-xl transition-all duration-300 group"
           >
             {/* Header Section */}
             <div className="flex items-start justify-between">
               <div className="flex-1">
-                <p className="text-sm font-medium dark:text-slate-400 mb-2 text-slate-600">
+                <p className="text-sm font-medium dark:text-slate-900 mb-2 text-black">
                   {item.title}
                 </p>
-                <p className="text-3xl font-bold text-slate-800 dark:text-white mb-4">
+                <p className="text-3xl font-bold text-slate-800 dark:text-orange-600 mb-4">
                   {item.value}
                 </p>
                 <div className="flex items-center space-x-2">

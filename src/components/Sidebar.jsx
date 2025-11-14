@@ -12,6 +12,7 @@ import {
   Users,
   FileText,
   ChevronDown,
+  Droplet,
 } from "lucide-react";
 
 const menuItems = [
@@ -101,12 +102,12 @@ const Sidebar = ({ currentPage, setCurrentPage, isOpen }) => {
       {/* Logo Area */}
       <div className="p-6 border-b border-slate-200/50 dark:border-slate-200/50 flex items-center justify-center">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-linear-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-            <Zap className="w-6 h-6 text-white" />
+          <div className="w-10 h-10 bg-linear-to-r from-blue-600 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+            <Droplet className="w-6 h-6 text-green-500" />
           </div>
           {isOpen && (
             <div>
-              <h2 className="text-xl font-bold text-slate-700 dark:text-black">
+              <h2 className="text-xl font-bold  text-slate-700 dark:text-blue-800">
                 Bahirdar
               </h2>
               <p className="text-sm font-semibold text-slate-600 dark:text-slate-800">
